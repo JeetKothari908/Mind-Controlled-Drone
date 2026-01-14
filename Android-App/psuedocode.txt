@@ -1,0 +1,17 @@
+// 1) Initialize DJI SDK + register app
+DJISDKManager.getInstance().registerApp(context, callback)
+
+// 2) On product connected, get FlightController instance
+val fc = (product as Aircraft).flightController
+
+// 3) Enable Virtual Stick
+fc.setVirtualStickModeEnabled(true, completionCallback)
+
+// 4) Receive JSON commands from Python over WebSocket server
+// {"type":"virtual_stick","roll":..,"pitch":..,"yaw":..,"throttle":..,"duration_ms":..}
+
+// 5) Apply control
+fc.sendVirtualStickFlightControlData(
+    FlightControlData(pitch, roll, yaw, throttle),
+    completionCallback
+)
