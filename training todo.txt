@@ -1,0 +1,19 @@
+TODO (very broadly)
+
+store CSV files of brainwave patterns in channels, along with the target value (like directional intent or panic)
+save and load models, most likely using serialized objects (pickles)
+each user has their own models due to each person being different in brain function.
+
+decide on the kind of model output we need for this task:
+    Classifier: we can look at the inputs and determine which action is most likely (multiclass)
+    Regression: based on input, decide how well it matches each intent
+
+
+likely this data will have to be processed using a CNN on a fourier-transformed representation of the brainwave channels
+alternately, an CNN paired with RNN or transformer may be useful to retain context or meaning over time. This would be harder to train
+
+finally, the model output has to be sent to the DJI SDK to fly the thing but that's a whole other can of worms
+
+
+
+
