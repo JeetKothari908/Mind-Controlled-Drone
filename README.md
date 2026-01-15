@@ -4,7 +4,7 @@ This project uses a Muse 2 along with Muselsl to live stream EEG data. We combin
 For ML, we plan on using a three way classifier for each dimension of movement with imagining left hand movement, imagining right hand movement, and a third imagined movement/focused state. We also plan on using a two way classifier for + or - movement in the selected dimension with imagined left/right hand movement. 
 
 To Do:
-Debug + Test EEG Pipeline
-Develop ML model
-Make Andriod App
-Connect Everything w/ websockets
+Debug + Test EEG Pipeline (Jeet)
+Develop ML model (Piotr)
+Make Andriod App (both)
+Connect Everything w/ websockets (Jeet)
