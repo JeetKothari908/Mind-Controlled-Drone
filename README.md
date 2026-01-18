@@ -6,10 +6,10 @@ For ML, we plan on using a three way classifier for each dimension of movement w
 Note: This program uses BlueMuse and muselsl, so you also need pylsl and liblsl to stream data. 
 
 To Do:
-Debug + Test EEG Pipeline
-Develop ML model
-Make Andriod App
-Connect Everything w/ websockets
+Debug + Test EEG Pipeline (Jeet)
+Develop ML model (Piotr)
+Make Andriod App (both)
+Connect Everything w/ websockets (Jeet)
 
 Progress:
 Verified BCI works with Python and live streaming data works
